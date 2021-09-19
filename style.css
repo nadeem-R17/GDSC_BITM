@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{ 
+    background-image: url("one.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* background-color: #1a73e8; */
+}
+nav{
+    
+    background-color: none;
+    
+   
+}
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+nav .logo{
+    float: left;
+    color: #1a73e8;
+    font-size: 3.8vh;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 20px;
+}
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+nav ul li{
+    
+    display: inline-block;
+    
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 2.8vh;
+    padding: 8px 15px;
+}
+nav ul li a:hover{
+    color: green;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #34a853,
+                0 0 5px #289c47;
+}
+nav ul ul li a:hover{
+    color: #34a853;
+    box-shadow: none;
+}
+nav ul ul{
+    position: absolute;
+    top: 90px;
+    border-top: 3px solid #34a853;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .5s;
+}
+nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+nav ul ul li{
+    position: relative;
+    margin: 0;
+    
+    background: white;
+    
+    width: 15vw;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid #34a853;
+}
+nav ul ul li a{
+    
+    
+    line-height: 5vh;
+}
